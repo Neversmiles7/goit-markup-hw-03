@@ -396,12 +396,13 @@ button {
 }
 
 .subject-item {
+  width: 370px;
   margin: 15px;
 }
 
 .subject-title {
   margin-bottom: 4px;
-  
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
