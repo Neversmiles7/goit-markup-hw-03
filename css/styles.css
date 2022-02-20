@@ -467,3 +467,23 @@ input[type="radio"] {
 .label-filter:nth-child(-n + 4) {
   margin-right: 8px;
 }
+
+[value="all"]:checked ~ .label-list [for="all"],
+[value="web"]:checked ~ .label-list [for="web"],
+[value="app"]:checked ~ .label-list [for="app"],
+[value="dis"]:checked ~ .label-list [for="dis"],
+[value="mar"]:checked ~ .label-list [for="mar"] {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+[value="all"]:checked ~ .subject > .subject-item:not([class~="all"]) {
+  display: block;
+}
+
+[value="web"]:checked ~ .subject > .subject-item:not([class~="web"]),
+[value="app"]:checked ~ .subject > .subject-item:not([class~="app"]),
+[value="dis"]:checked ~ .subject > .subject-item:not([class~="dis"]),
+[value="mar"]:checked ~ .subject > .subject-item:not([class~="mar"]) {
+  display: none;
+}
