@@ -55,6 +55,11 @@ button {
   left: -9999px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Логотип */
 
 .header {
@@ -192,6 +197,15 @@ button {
   background-color: #ffffff;
 }
 
+.advantage-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage-item {
+  width: 270px;
+}
+
 .advantage-name {
   font-weight: 700;
   font-size: 14px;
@@ -213,7 +227,14 @@ button {
   background-color: #ffffff;
 }
 
+.job-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .job-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
@@ -228,6 +249,8 @@ button {
 }
 
 .our-team-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
@@ -235,7 +258,16 @@ button {
   color: #212121;
 }
 
+.members {
+  display: flex;
+  justify-content: space-between;
+}
+
 .members-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
   background-color: #ffffff;
 }
 
