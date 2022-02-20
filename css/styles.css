@@ -13,7 +13,49 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 /* Логотип */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
 
 .navigation-logo {
   font-family: "Raleway", sans-serif;
@@ -30,7 +72,26 @@ a {
 
 /* Навигация */
 
-.navigation-item {
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  margin-left: 93px;
+  margin-right: 331px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -38,14 +99,22 @@ a {
   color: #212121;
 }
 
-.navigation-item:hover,
-.navigation-item:focus {
+.navigation-link:hover,
+.navigation-link:focus {
   color: #2196f3;
 }
 
 /* Контакты */
 
+.header-mail {
+  margin-right: 50px;
+}
+
 .header-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
